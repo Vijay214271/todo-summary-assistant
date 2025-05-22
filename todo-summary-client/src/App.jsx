@@ -1,4 +1,4 @@
-// src/App.jsx
+
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import TodoForm from "./components/TodoForm";
@@ -31,7 +31,6 @@ function App() {
     fetchTodos();
   };
 
-  // src/App.jsx
 const updateTodo = async (id, updatedFields) => {
   try {
     await axios.patch(`${BASE_URL}/todos/${id}`, updatedFields);

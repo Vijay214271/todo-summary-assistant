@@ -1,4 +1,4 @@
-// components/SummaryButton.jsx
+
 import React from "react";
 
 function SummaryButton({ onSummarize }) {

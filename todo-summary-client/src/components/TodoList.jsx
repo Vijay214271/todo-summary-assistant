@@ -1,4 +1,4 @@
-// components/TodoList.jsx
+
 import React, { useState } from "react";
 
 function TodoList({ todos, onDelete, onUpdate }) {

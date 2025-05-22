@@ -37,7 +37,6 @@ export const updateTodo = async (req, res) => {
   }
   console.log(`✅ Parsed numeric ID: ${numericId}`);
 
-  // Show all current todos
   const { data: allTodos, error: allError } = await supabase.from('todos').select('*');
   if (allError) {
     console.error('❌ Error fetching todos:', allError);
@@ -56,7 +55,6 @@ export const updateTodo = async (req, res) => {
 
   console.log('🛠 Update payload constructed:', updateData);
 
-  // Check if the todo exists
   const { data: existingTodo, error: checkError } = await supabase
     .from('todos')
     .select('*')
@@ -74,7 +72,6 @@ export const updateTodo = async (req, res) => {
 
   console.log(`🔍 Matching todo before update (id=${numericId}):`, existingTodo);
 
-  // Now update the todo
   const { data, error } = await supabase
     .from('todos')
     .update(updateData)

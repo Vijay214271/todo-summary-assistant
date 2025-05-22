@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import todoRoutes from './routes/todoRoutes.js';
-import { summarizeTodos } from './controller/todoController.js'; // 👈 use named import
+import { summarizeTodos } from './controller/todoController.js';
 
 dotenv.config();
 
