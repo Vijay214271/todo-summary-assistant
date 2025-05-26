@@ -7,7 +7,7 @@ import SummaryButton from "./components/SummaryButton";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://todo-summary-assistant-uwew.onrender.com";
 
 function App() {
   const [todos, setTodos] = useState([]);
